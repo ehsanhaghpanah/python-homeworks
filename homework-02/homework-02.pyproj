@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{80c23d69-8441-4501-858f-52e64fb68829}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>utils\pypath.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,10 +28,25 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="overloading\Budget.py" />
+    <Compile Include="temp\temp1.py" />
+    <Compile Include="temp\test2.py" />
+    <Compile Include="temp\test3.py" />
+    <Compile Include="temp\test4.py" />
+    <Compile Include="temp\test5.py" />
+    <Compile Include="temp\test6.py" />
+    <Compile Include="temp\test7.py" />
+    <Compile Include="temp\test8.py" />
+    <Compile Include="temp\test9.py" />
+    <Compile Include="utils\pypath.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="classes\" />
     <Folder Include="overloading\" />
+    <Folder Include="temp\" />
+    <Folder Include="utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="temp\data.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

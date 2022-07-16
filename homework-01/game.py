@@ -1,11 +1,13 @@
 #
-# (C) Ehsan Haghpanah, 2022.
-# haghpanah@scenus.com
+# Copyright (C) scenus.com, 2022.
+# All rights reserved.
+# Ehsan Haghpanah; haghpanah@scenus.com
 #
 
 from random import randint
 from enum import Enum
 
+# an enum sample
 class CheckResult(Enum):
     STOP = 0
     MORE = 1

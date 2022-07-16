@@ -1,6 +1,7 @@
 #
-# (C) Ehsan Haghpanah, 2022.
-# haghpanah@scenus.com
+# Copyright (C) scenus.com, 2022.
+# All rights reserved.
+# Ehsan Haghpanah; haghpanah@scenus.com
 #
 
 from helpers import *
