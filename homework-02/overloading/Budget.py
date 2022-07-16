@@ -4,9 +4,13 @@
 # Ehsan Haghpanah; haghpanah@scenus.com
 #
 
+from multipledispatch import dispatch
+from classes.CashFlow import CashFlow
+
 class Budget:
 
 	#
-	#
-	def __init__(self) -> None:
-		pass
+	# default constractor
+	def __init__(self, amount: float) -> None:
+		self.amount = amount
+		self.cashflow = CashFlow(amount, 0)
