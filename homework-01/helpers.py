@@ -28,7 +28,7 @@ def get_int() -> int:
 #
 # tries to get an integer number from input
 #
-# @param i_msg : input function prompt message
+# @param    i_msg : input function prompt message
 # @return   an integer if possible otherwise none
 #
 @dispatch(str)
@@ -38,8 +38,8 @@ def get_int(i_msg: str) -> int:
 #
 # tries to get an integer number from input
 #
-# @param i_msg : input function prompt message
-# @param e_msg : error message
+# @param    i_msg : input function prompt message
+# @param    e_msg : error message
 # @return   an integer if possible otherwise none
 #
 @dispatch(str, str)

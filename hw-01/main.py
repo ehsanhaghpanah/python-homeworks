@@ -31,22 +31,24 @@ def get_int(i_msg: str) -> int:
 
 #
 # main loop
-def void_main() -> None:
+def main_run(lower_bound: int, upper_bound: int, quit_key: str) -> None:
     print("----- pythonic interactive game -----")
 
-    lb = get_int("give me the lower bound = ")
-    ub = get_int("give me the upper bound = ")
+    lb = lower_bound if (lower_bound != None) else get_int("give me the lower bound = ")
+    ub = upper_bound if (upper_bound != None) else get_int("give me the upper bound = ")
     if lb >= ub:
         print("the lower bound must be less than the upper bound!")
         exit()
+
+    qk = "q" if (quit_key == None) else quit_key
 
     print("----- game started -----")
 
     # initializing and computation
     gm = Game(lb, ub)
     while True: #{
-        ky = input(f"give me your guess, an integer between {gm.lower_bound} and {gm.upper_bound}, 'q' to quit = ")
-        if ky == "q":
+        ky = input(f"give me your guess, an integer between {gm.lower_bound} and {gm.upper_bound}, '{qk}' to quit = ")
+        if ky == qk:
             print("game quited, bye!")
             break
 
@@ -66,4 +68,7 @@ def void_main() -> None:
 
 #
 # calling main function
-void_main()
+main_run(1, 100, '0')
+
+# or just 
+# main_run(None, None, None)
