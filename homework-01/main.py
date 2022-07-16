@@ -22,7 +22,7 @@ def void_main() -> None:
 
     # initializing and computation
     gm = Game(lb, ub)
-    while True:
+    while True: #{
         ky = input(f"give me your guess, an integer between {gm.lower_bound} and {gm.upper_bound}, 'q' to quit = ")
         if ky == "q":
             print("game quited, bye!")
@@ -40,6 +40,7 @@ def void_main() -> None:
             print("not match, GO LOWER!")
         else:
             print("not match, GO UPPER!")
+    #}
 
 #
 # calling main function
