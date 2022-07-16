@@ -32,6 +32,6 @@ class Game(object):
         if number == self.random_number:
             return CheckResult.STOP
         elif number < self.random_number:
-            return CheckResult.MORE
-        else:
             return CheckResult.LESS
+        else:
+            return CheckResult.MORE

@@ -20,6 +20,7 @@ def void_main() -> None:
 
     print("----- game started -----")
 
+    # initializing and computation
     gm = Game(lb, ub)
     while True:
         ky = input(f"give me your guess, an integer between {gm.lower_bound} and {gm.upper_bound}, 'q' to quit = ")
@@ -35,7 +36,7 @@ def void_main() -> None:
         if cs == CheckResult.STOP:
             print("WOW! your guess is correct. game is over!")
             break
-        elif cs == CheckResult.LESS:
+        elif cs == CheckResult.MORE:
             print("not match, GO LOWER!")
         else:
             print("not match, GO UPPER!")
