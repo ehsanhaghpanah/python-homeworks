@@ -21,6 +21,10 @@ print(path)
 # print(abspath(getsourcefile(lambda:0)))
 
 
-# with open('data.txt') as file_object:
-#     contents = file_object.read()
-# print(contents)
+with open(path + '\data.txt') as file_object:
+    contents = file_object.read()
+
+contents = contents[1:-1]
+l = contents.split(",")
+a = [i.strip().strip("\"") for i in l]
+print(a)
