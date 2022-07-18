@@ -15,4 +15,10 @@ b.sort()
 print(len(b))
 print(f"first = {b[0]}, last = {b[-1]}")
 
+c = b.copy()
+b.reverse()
 
+if (c[0] == b[0]):
+	print("the same")
+else:
+	print("copied")
