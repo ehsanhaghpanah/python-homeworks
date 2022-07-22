@@ -22,17 +22,15 @@ def foo(a: float, b: float) -> float:
      
      return None
 
-# a = input("a = ")
-# b = input("b = ")
-
-a = 1
-b = 0
+a = input("a = ")
+b = input("b = ")
 
 print(foo(a, b))
 
+# a = 1
+# b = 0
 # a = -1.0
 # b = a ** 0.5
 # print(b)
-
 # a = 0
 # print(a ** 0.5)
