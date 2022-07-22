@@ -20,7 +20,7 @@ def try_parse(text: str) -> int:
 #
 # tries to get an integer number from input
 #
-# @param i_msg : input function prompt message
+# @param    i_msg : input function prompt message
 # @return   an integer if possible otherwise none
 #
 def get_int(i_msg: str) -> int:
@@ -69,6 +69,7 @@ def main_run(lower_bound: int, upper_bound: int, quit_key: str) -> None:
 #
 # calling main function
 main_run(1, 100, '0')
+
 
 # or just 
 # main_run(None, None, None)
