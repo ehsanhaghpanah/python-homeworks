@@ -1,0 +1,48 @@
+#
+# (C) Ehsan Haghpanah, 2022.
+#
+
+# x: str = input("x = ")
+# if (x.isdigit()):
+# 	print(f" {x} is integer")
+# elif (x.isdecimal()):
+# 	print(f" {x} is decimal")
+
+# x = "5.0"
+# if (x.isdigit()): print("int")
+# if (x.isdecimal()): print("d")
+# if (x.isnumeric()): print("n")
+
+# a = "1"
+# print(type(a))
+
+
+# s: str = input("location = ").lower()
+# if ((len(s) != 2) or (s[0] not in "abcdefgh") or (s[1] not in "12345678")):
+# 	print("invalid location")
+# 	exit()
+# if (s[0] in "")
+
+
+for a in "abcdefgh":
+	for b in "12345678":
+		s = a + b
+		m: int = (((ord(s[0]) - 97) * 8) + (ord(s[1]) - 48)) % 2
+		t = ord(s[0]) % 2 ^ int(s[1]) % 2
+		print(t, end=',')
+		# print(m, end=',')
+
+
+
+# a: str = "a2"
+# m: int = (ord(a[0]) - 96) * (ord(a[1]) - 48)
+# # m: int = ((ord(a[0]) - 96) * (ord(a[1]) - 48)) % 2
+# print(m)
+
+# print(ord(a[0]))
+# print(ord(a[1]))
+
+# i : int = 97
+# print(ord('a'))
+
+# print(chr(97))
