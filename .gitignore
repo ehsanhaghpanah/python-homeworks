@@ -161,3 +161,8 @@ cython_debug/
 
 .suo
 .vs
+
+#
+# CSharp ignore items
+bin/
+obj/
