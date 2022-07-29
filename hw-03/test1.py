@@ -1,5 +1,6 @@
 #
-# (C) Ehsan Haghpanah (haghpanah@scenus.com), 2022.
+# (C) ehsanha, 2022.
+# Ehsan Haghpanah; haghpanah@scenus.com
 #
 
 from os import listdir
@@ -19,8 +20,11 @@ def find_files(pa: str, ex: str, ls: list) -> list:
 	return ls
 
 def main_run() -> None:
-	ls = []
-	find_files("f:\z2", ".csv", ls)
+	ls: list = []
+	pa: str  = input("path to search = ")	# just enter something like c:\pycodes
+	ex: str  = input("file extension = ")	# just enter something like .py
+	find_files(pa, ex, ls)
 	print(ls)
 
 main_run()
+
