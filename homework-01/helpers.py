@@ -46,9 +46,7 @@ def get_int(i_msg: str) -> int:
 #
 @dispatch(str, str)
 def get_int(i_msg: str, e_msg: str) -> int:
-
     rs = try_parse(input(i_msg))
     if (rs == None):
         print(e_msg)
-
     return rs
